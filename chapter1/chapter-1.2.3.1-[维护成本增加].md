@@ -8,4 +8,4 @@
    另外，随着代码量的增大，在开发人员对全局功能缺乏深度理解的情况下，修复一个缺陷，还有可能引入其他的缺陷，在自动
 化测试机制不完善的情况下，很可能导致该过程陷入“修复越多，缺陷越多”的恶性循环。
 
-<img src="/images/complexity-increase-as-feauture-growing-800-600.png" />
+<img src="images/complexity-increase-as-feauture-growing-800-600.png" />
