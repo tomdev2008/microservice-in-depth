@@ -42,5 +42,10 @@
 	* [概述](chapter4/[概述].md)
 	* [持续交付的核心](chapter4/[持续交付的核心].md)	
 	* [麻雀虽小，五脏俱全](chapter4/[麻雀虽小，五脏俱全].md)	
-		* [开发](chapter4/[开发].md)	
+		* [开发](chapter4/[开发].md)
+		* [测试](chapter4/[测试].md)
+		* [持续集成与构建](chapter4/[持续集成与构建].md)
+		* [部署](chapter4/[部署].md)
+		* [运维](chapter4/[运维].md)
+	* [总结](chapter4/[总结].md)
 	
