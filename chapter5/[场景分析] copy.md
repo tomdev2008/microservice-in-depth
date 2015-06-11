@@ -1,0 +1,69 @@
+# 场景分析
+
+假定某电商系统，随着业务的发展，需要将产品的模块，从现有的单块架构逻辑中剥离出来，形成一个用于专门提供产品数据的服务，便于维护和扩展。
+
+作为产品部分，通常具有如下的属性：产品名称、产品分类、价格、创建时间、修改时间等。
+
+当然，在真实的情况下，其相关的属性可能会更复杂。
+
+首先，让我们来分析一下如果需要构建这样一个提供产品数据的服务，其应该具备哪些功能或者接口。
+
+如下的代码描述了对于当前这个例子，基于REST所定义服务提供的接口。
+
+  >
+    关于REST
+    表述性状态转移（英文：Representational State Transfer，简称REST）是Roy Fielding博士在2000年他的博士论文中提出的一种软件架构风格。它是一种针对分布式应用系统的设计和开发方式，能有效降低系统的复杂性，提高可伸缩性。
+  >
+    同传统的SOAP或者XML-RPC相比，REST是一种更简洁和轻量级的架构风格，已经有越来越多的WEB服务开始采用REST风格设计和实现相关系统。需要注意的是，REST是设计风格而不是标准。REST通常使用HTTP、URI和XML以及JSON这些现有的广泛流行的协议和标准。
+  >    
+    REST以资源为中心，将外部访问的所有信息定义成不同的资源，并使用HTTP协议的verbs，映射为操作资源的行为。
+    如果想了解更多关于REST的知识，请参考Roy Fielding博士的文章《Architectural Styles and the Design of Network-based Software Architectures》
+
+#### 创建一个新的产品
+
+  ```
+      Path:          /products
+      Verb:          POST
+      Content-Type:  application/json   
+      Body:          { 
+                          'name':'Docker In Action',
+                          'category':'Book',
+                          'price':56.00
+                     }
+  
+  ```
+
+#### 获取现有的产品列表
+
+  ```
+      Path:          /products
+      Verb:          GET
+      Accept:        application/json   
+  ```
+
+#### 获取某个产品的明细
+
+  ```
+    Path:          /products/:id
+    Verb:          GET
+    Accept:        application/json   
+  ```
+
+#### 修改某个产品的明细
+
+  ```
+    Path:          /products/:id
+    Verb:          PUT
+    Body:          {
+                        'name':'Docker In Action',
+                        'category':'Book',
+                        'price':56.00
+                   }
+  ```
+
+#### 删除某个产品
+  ```
+    Path:          /products/:id
+    Verb:          DELETE
+  ```
+  
