@@ -92,3 +92,5 @@
 		* [HAL浏览器](chapter6/[4.3HAL浏览器].md)
 		* [小结](chapter6/[4.4HAL小结].md)
 	* [总结](chapter6/[5.总结].md)
+
+* [附录](REFERENCE.md)	
