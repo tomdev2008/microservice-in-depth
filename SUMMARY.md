@@ -1,8 +1,8 @@
 # Summary
 
-* [前言](README.md)
+* [编者的话](README.md)
 
-* [综述](chapter0/[概述].md)
+* [前言](INTRODUCTION.md)
 
 * [单块架构应用以及其面临的挑战]()
 	* [概述](chapter1/[1.概述].md)
